@@ -1,0 +1,40 @@
+{
+  "desks": [
+    {
+      "id": "desk-1",
+      "name": "Banco Principale",
+      "color": "#0ea5e9",
+      "value": 18,
+      "step": 1,
+      "visible": true,
+      "isMain": true
+    },
+    {
+      "id": "desk-2",
+      "name": "Salumeria",
+      "color": "#10b981",
+      "value": 6,
+      "step": 1,
+      "visible": true,
+      "isMain": false
+    },
+    {
+      "id": "desk-3",
+      "name": "Panetteria",
+      "color": "#f59e0b",
+      "value": 11,
+      "step": 1,
+      "visible": true,
+      "isMain": false
+    },
+    {
+      "id": "desk-4",
+      "name": "Pescheria",
+      "color": "#8b5cf6",
+      "value": 4,
+      "step": 2,
+      "visible": false,
+      "isMain": false
+    }
+  ]
+}

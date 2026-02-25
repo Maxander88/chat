@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "title": "Sole pieno",
+      "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "title": "Nuvole in arrivo",
+      "url": "https://images.unsplash.com/photo-1514632595-4944383f2737?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "title": "Pioggia leggera",
+      "url": "https://images.unsplash.com/photo-1501691223387-dd0500403074?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "title": "Neve in città",
+      "url": "https://images.unsplash.com/photo-1457269449834-928af64c684d?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "title": "Temporale",
+      "url": "https://images.unsplash.com/photo-1605727216801-e27ce1d0cc28?auto=format&fit=crop&w=1200&q=80"
+    }
+  ]
+}
