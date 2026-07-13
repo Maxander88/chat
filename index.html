@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EliminaCode Supermercato</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>EliminaCode - Gestione Banchi Supermercato</h1>
+      <div class="topbar-actions">
+        <button id="export-config" class="ghost-btn">Esporta configurazione JSON</button>
+        <button id="reset-default" class="ghost-btn">Ripristina default</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="left-panel">
+        <div class="panel-head">
+          <h2>Banchi</h2>
+          <p>Usa + e - per avanzare o diminuire il numero in coda.</p>
+        </div>
+        <div id="desks-grid" class="desks-grid"></div>
+      </section>
+
+      <aside class="right-panel">
+        <div class="weather-head">
+          <h2>Meteo casuale</h2>
+          <button id="next-weather" class="primary-btn">Nuova immagine</button>
+        </div>
+        <figure class="weather-card">
+          <img id="weather-image" alt="Immagine meteo casuale" />
+          <figcaption id="weather-caption"></figcaption>
+        </figure>
+      </aside>
+    </main>
+
+    <section class="configurator">
+      <h2>Configuratore avanzato</h2>
+      <p>
+        Personalizza numero, nome, colore, passo, visibilità e banco principale. Puoi creare e modificare
+        qualsiasi banco.
+      </p>
+
+      <form id="desk-form" class="desk-form">
+        <div class="field">
+          <label for="desk-name">Nome banco</label>
+          <input id="desk-name" name="name" type="text" placeholder="Es. Ortofrutta" required />
+        </div>
+
+        <div class="field">
+          <label for="desk-color">Colore</label>
+          <input id="desk-color" name="color" type="color" value="#0d9488" />
+        </div>
+
+        <div class="field">
+          <label for="desk-value">Numero iniziale</label>
+          <input id="desk-value" name="value" type="number" value="1" min="0" />
+        </div>
+
+        <div class="field">
+          <label for="desk-step">Passo + / -</label>
+          <input id="desk-step" name="step" type="number" value="1" min="1" />
+        </div>
+
+        <div class="field field-checkbox">
+          <input id="desk-visible" name="visible" type="checkbox" checked />
+          <label for="desk-visible">Visibile a schermo</label>
+        </div>
+
+        <div class="field field-checkbox">
+          <input id="desk-main" name="isMain" type="checkbox" />
+          <label for="desk-main">Imposta come banco principale (più grande)</label>
+        </div>
+
+        <button type="submit" class="primary-btn">Aggiungi banco</button>
+      </form>
+
+      <div>
+        <h3>Elenco banchi configurati</h3>
+        <ul id="desk-list" class="desk-list"></ul>
+      </div>
+    </section>
+
+    <template id="desk-card-template">
+      <article class="desk-card">
+        <header>
+          <h3 class="desk-title"></h3>
+          <span class="badge-main">Principale</span>
+        </header>
+        <p class="desk-number"></p>
+        <div class="controls">
+          <button class="action-btn minus" type="button">-</button>
+          <button class="action-btn plus" type="button">+</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
